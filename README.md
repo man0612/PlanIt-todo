@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+📌 PlanIt - Todo List App  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PlanIt is a simple and elegant **React Todo List application** that helps you organize your daily tasks efficiently.  
+You can **add, delete, and manage todos**, and they are saved in your browser’s **localStorage** so nothing is lost on refresh.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+ 🚀 Features  
+- ➕ Add todos with title & description  
+- 🗑️ Delete tasks instantly  
+- 💾 Persistent storage with localStorage  
+- 📱 Responsive and clean UI  
+- ⚛️ Built with React functional components & hooks  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 🛠️ Tech Stack  
+- **React.js** (Hooks & Functional Components)  
+- **React Router DOM**  
+- **Bootstrap** for styling  
+- **LocalStorage** for persistence  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+ ⚡ Getting Started  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) htmlFor more inhtmlFormation.
+In the project directory, you can run:  
 
-### `npm run build`
+### `npm install`  
+Installs all dependencies.  
 
-Builds the app htmlFor production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build htmlFor the best perhtmlFormance.
+### `npm start`  
+Runs the app in development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The page will reload if you make changes.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) htmlFor more inhtmlFormation.
+### `npm run build`  
+Builds the app for production to the `build` folder.  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Setup  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the repo
+git clone https://github.com/man0612/PlanIt-todo.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Go inside project
+cd PlanIt-todo
 
-You don't have to ever use `eject`. The curated feature set is suitable htmlFor small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready htmlFor it.
+# Install dependencies
+npm install
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start app
+npm start
