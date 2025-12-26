@@ -8,14 +8,8 @@ import About from "./MyComponents/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  // Load todos from localStorage (or empty array if none)
-  let initTodo;
-  if (localStorage.getItem("todos") === null) {
-    initTodo = [];
-  } else {
-    initTodo = JSON.parse(localStorage.getItem("todos"));
-  }
-
+  // Load todos from localStorage
+  const initTodo = JSON.parse(localStorage.getItem("todos")) || [];
   const [todos, setTodos] = useState(initTodo);
 
   // Delete a todo
@@ -25,21 +19,31 @@ function App() {
 
   // Add a new todo
   const addTodo = (title, desc) => {
-    let sno;
-    if (todos.length === 0) {
-      sno = 1;
-    } else {
-      sno = todos[todos.length - 1].sno + 1;
-    }
+    const sno =
+      todos.length === 0 ? 1 : todos[todos.length - 1].sno + 1;
+
     const myTodo = {
-      sno: sno,
-      title: title,
-      desc: desc,
+      sno,
+      title,
+      desc,
+      completed: false,
     };
+
     setTodos([...todos, myTodo]);
   };
 
-  // Save todos in localStorage whenever they change
+  // ✅ EDIT TODO (MOVED OUTSIDE addTodo)
+  const editTodo = (sno, newTitle, newDesc) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.sno === sno
+          ? { ...todo, title: newTitle, desc: newDesc }
+          : todo
+      )
+    );
+  };
+
+  // Save todos to localStorage
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
@@ -57,7 +61,11 @@ function App() {
               element={
                 <>
                   <AddTodo addTodo={addTodo} />
-                  <Todos todos={todos} onDelete={onDelete} />
+                  <Todos
+                    todos={todos}
+                    onDelete={onDelete}
+                    editTodo={editTodo}
+                  />
                 </>
               }
             />
