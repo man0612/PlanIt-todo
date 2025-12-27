@@ -31,7 +31,7 @@ Installs all dependencies.
 
 ### `npm start`  
 Runs the app in development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.  
+Open [[http://localhost:3000](http://localhost:3000)](https://admirable-custard-b40ed9.netlify.app/) to view it in your browser.  
 
 The page will reload if you make changes.  
 
